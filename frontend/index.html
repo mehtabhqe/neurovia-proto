@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neurovia Nexus — IT Support. Software. AI.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ═══════════════════ CURSOR ═══════════════════ -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">N</span>
+      <span>Neurovia Nexus</span>
+    </a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="book.html" class="nav-cta">Book Support</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="book.html" class="mobile-cta">Book Support →</a>
+</div>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <canvas id="hero-canvas"></canvas>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">
+      <span class="dot"></span>
+      Available for remote support today
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line reveal-line">Stop settling</span>
+      <span class="line reveal-line delay-1">for broken tech.</span>
+      <span class="line accent reveal-line delay-2">We fix it fast.</span>
+    </h1>
+
+    <p class="hero-sub reveal delay-3">
+      Professional IT support, software solutions, and AI innovation
+      for individuals and businesses across India.
+    </p>
+
+    <div class="hero-actions reveal delay-4">
+      <a href="book.html" class="btn-primary">Book a technician →</a>
+      <a href="services.html" class="btn-ghost">Explore services</a>
+    </div>
+  </div>
+
+  <div class="hero-stats reveal delay-4">
+    <div class="stat">
+      <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+      <span class="stat-label">Devices repaired</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+      <span class="stat-label">Businesses served</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="95">0</span><span class="stat-plus">%</span>
+      <span class="stat-label">Satisfaction rate</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════ MARQUEE ═══════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-inner" id="marquee">
+      <span>Remote Support</span><span class="sep">✦</span>
+      <span>Virus Removal</span><span class="sep">✦</span>
+      <span>Laptop Repair</span><span class="sep">✦</span>
+      <span>Network Setup</span><span class="sep">✦</span>
+      <span>Cybersecurity</span><span class="sep">✦</span>
+      <span>Cloud Solutions</span><span class="sep">✦</span>
+      <span>Software Dev</span><span class="sep">✦</span>
+      <span>Data Recovery</span><span class="sep">✦</span>
+      <span>Remote Support</span><span class="sep">✦</span>
+      <span>Virus Removal</span><span class="sep">✦</span>
+      <span>Laptop Repair</span><span class="sep">✦</span>
+      <span>Network Setup</span><span class="sep">✦</span>
+      <span>Cybersecurity</span><span class="sep">✦</span>
+      <span>Cloud Solutions</span><span class="sep">✦</span>
+      <span>Software Dev</span><span class="sep">✦</span>
+      <span>Data Recovery</span><span class="sep">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ SERVICES ═══════════════════ -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">What we do</span>
+      <h2 class="section-title reveal">
+        Every tech problem,<br><em>one team.</em>
+      </h2>
+    </div>
+
+    <div class="services-grid" id="services-grid">
+
+      <a href="services.html" class="service-card reveal" data-index="01">
+        <div class="service-icon">⚡</div>
+        <h3>Remote Support</h3>
+        <p>Instant online help for OS issues, software crashes, virus removal, and performance fixes.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="services.html" class="service-card reveal delay-1" data-index="02">
+        <div class="service-icon">🔧</div>
+        <h3>Onsite Repair</h3>
+        <p>Certified technicians at your door. Hardware, networks, and office IT setup done right.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="services.html" class="service-card reveal delay-2" data-index="03">
+        <div class="service-icon">🏢</div>
+        <h3>Business IT</h3>
+        <p>AMC contracts, managed IT, server admin, and cybersecurity for companies of all sizes.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="services.html" class="service-card reveal delay-3" data-index="04">
+        <div class="service-icon">💻</div>
+        <h3>Software Development</h3>
+        <p>Websites, web apps, mobile apps, AI chatbots, and workflow automation built to last.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="services.html" class="service-card reveal" data-index="05">
+        <div class="service-icon">☁️</div>
+        <h3>Cloud Solutions</h3>
+        <p>Migration, infrastructure management, and scalable cloud architecture on AWS and Azure.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="services.html" class="service-card reveal delay-1" data-index="06">
+        <div class="service-icon">🛡️</div>
+        <h3>Cybersecurity</h3>
+        <p>Security audits, endpoint protection, compliance consulting, and incident response.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+<section class="how-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">The process</span>
+      <h2 class="section-title reveal">Fixed in <em>five steps.</em></h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Book online</h3>
+          <p>Fill out our 4-step form in under 3 minutes. No calls, no waiting.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-1">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Describe the problem</h3>
+          <p>Tell us exactly what's happening. Upload screenshots if needed.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>Technician assigned</h3>
+          <p>A certified expert matched to your issue is on their way within 30 min.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>Remote or onsite help</h3>
+          <p>We fix it wherever you are — at home, the office, or anywhere in between.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-4">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h3>Issue resolved</h3>
+          <p>Confirmed fixed, documented, and guaranteed. No fix, no fee.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-cta reveal">
+      <a href="book.html" class="btn-primary">Start now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Real clients</span>
+      <h2 class="section-title reveal">Don't take our<br><em>word for it.</em></h2>
+    </div>
+
+    <div class="testimonials-grid" id="testimonials-grid">
+
+      <div class="tcard reveal">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"Our entire server infrastructure went down on a Friday evening. Neurovia had it back online in under two hours. Genuinely saved our weekend launch."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">RS</div>
+          <div>
+            <strong>Rohit Sharma</strong>
+            <span>IT Manager, TechCorp India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard reveal delay-1">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"I'd been burned by freelancers before. Neurovia set up our office network properly, documented everything, and picked up every follow-up call. Rare."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">PP</div>
+          <div>
+            <strong>Priya Patel</strong>
+            <span>Founder, StartupHub</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard reveal delay-2">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"Remote session, MacBook fixed in 45 minutes. They didn't just patch it — they explained what went wrong and how to prevent it. Actually helpful."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">AK</div>
+          <div>
+            <strong>Amir Khan</strong>
+            <span>Senior Engineer, Freelancer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard reveal delay-3">
+        <div class="tcard-stars">★★★★★</div>
+        <p>"Zero downtime this entire quarter. Their managed IT service runs so smoothly I've almost forgotten tech problems exist. Almost."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">SR</div>
+          <div>
+            <strong>Sunita Reddy</strong>
+            <span>Operations Head, FreshMart Retail</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TEAM / FOUNDER ═══════════════════ -->
+<section class="founder-section" id="team">
+  <div class="container">
+    <div class="founder-layout">
+
+      <div class="founder-left reveal">
+        <span class="section-label">The team</span>
+        <h2 class="section-title">People behind<br><em>every fix.</em></h2>
+        <p>Neurovia Nexus was founded on one belief: technology should work for you, not against you. Every technician on our team is certified, background-verified, and trained to explain — not just fix.</p>
+        <a href="about.html" class="btn-outline">Meet the full team →</a>
+      </div>
+
+      <div class="founder-right">
+        <!-- Founder card -->
+        <div class="person-card reveal delay-1">
+          <div class="person-avatar founder-avatar">
+            <div class="avatar-initials">NN</div>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="person-info">
+            <strong>Neurovia Nexus</strong>
+            <span>Founder & Lead Engineer</span>
+            <p class="person-quote">"We're not just fixing computers. We're giving people their time back."</p>
+          </div>
+        </div>
+
+        <!-- Technician cards -->
+        <div class="techs-row">
+          <div class="tech-card reveal delay-2">
+            <div class="tech-avatar">AR</div>
+            <div>
+              <strong>Arjun Rao</strong>
+              <span>Hardware Specialist</span>
+            </div>
+            <div class="tech-badge">Certified</div>
+          </div>
+          <div class="tech-card reveal delay-3">
+            <div class="tech-avatar">NM</div>
+            <div>
+              <strong>Neha Mehta</strong>
+              <span>Network Engineer</span>
+            </div>
+            <div class="tech-badge">Certified</div>
+          </div>
+          <div class="tech-card reveal delay-4">
+            <div class="tech-avatar">KS</div>
+            <div>
+              <strong>Karan Singh</strong>
+              <span>Cybersecurity</span>
+            </div>
+            <div class="tech-badge">Certified</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ WISHLIST / FUTURE ═══════════════════ -->
+<section class="future-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">What's coming</span>
+      <h2 class="section-title reveal">We're building<br><em>what's next.</em></h2>
+    </div>
+
+    <div class="future-grid" id="wishlist-grid">
+      <div class="future-card reveal" data-status="Research">
+        <div class="future-status">Research</div>
+        <h3>NADT — Autonomous Device Technician</h3>
+        <p>An AI system that diagnoses and fixes common device issues without human intervention. Our biggest bet.</p>
+      </div>
+      <div class="future-card reveal delay-1" data-status="In Development">
+        <div class="future-status">In Development</div>
+        <h3>Smart Ticket Routing</h3>
+        <p>AI that matches your issue to the best available technician in seconds, not hours.</p>
+      </div>
+      <div class="future-card reveal delay-2" data-status="Planning">
+        <div class="future-status">Planning</div>
+        <h3>Mobile App</h3>
+        <p>Book, track, and communicate with your technician from your phone in real time.</p>
+      </div>
+      <div class="future-card reveal delay-3" data-status="Research">
+        <div class="future-status">Research</div>
+        <h3>Remote Monitoring Dashboard</h3>
+        <p>24/7 proactive monitoring for businesses, with automatic alerts before problems hit.</p>
+      </div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown-block reveal">
+      <p class="countdown-label">NADT launches in</p>
+      <div class="countdown-timer" id="countdown">
+        <div class="cd-unit"><span id="cd-days">000</span><label>days</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><span id="cd-hours">00</span><label>hours</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><span id="cd-mins">00</span><label>min</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><span id="cd-secs">00</span><label>sec</label></div>
+      </div>
+      <a href="blog.html" class="btn-ghost countdown-btn">Follow the journey →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ BLOG ═══════════════════ -->
+<section class="blog-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">From the blog</span>
+      <h2 class="section-title reveal">Insights &amp;<br><em>updates.</em></h2>
+    </div>
+
+    <div class="blog-grid">
+      <a href="blog.html" class="blog-card featured reveal">
+        <div class="blog-img" style="background: linear-gradient(135deg,#1a1a2e,#16213e)">
+          <span class="blog-category">IT Tips</span>
+        </div>
+        <div class="blog-body">
+          <h3>10 Signs Your PC Is Crying for Help (And How to Fix Them)</h3>
+          <p>From overheating to mysterious slowdowns — here's what your computer is trying to tell you.</p>
+          <div class="blog-meta"><span>5 min read</span><span>Jun 2025</span></div>
+        </div>
+      </a>
+
+      <div class="blog-side" id="latest-posts">
+        <a href="blog.html" class="blog-card-small reveal delay-1">
+          <span class="blog-category-sm">Cybersecurity</span>
+          <h4>Why Small Businesses Are the #1 Target for Ransomware in 2025</h4>
+          <div class="blog-meta"><span>4 min</span></div>
+        </a>
+        <a href="blog.html" class="blog-card-small reveal delay-2">
+          <span class="blog-category-sm">AI Research</span>
+          <h4>NADT Update: What We've Learned From 200 Diagnostic Sessions</h4>
+          <div class="blog-meta"><span>3 min</span></div>
+        </a>
+        <a href="blog.html" class="blog-card-small reveal delay-3">
+          <span class="blog-category-sm">Cloud</span>
+          <h4>When to Move to the Cloud — A No-Nonsense Guide for SMEs</h4>
+          <div class="blog-meta"><span>6 min</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOUNDER & TEAM ═══════════════════ -->
+<section class="team-section-home" id="team">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">The people</span>
+      <h2 class="section-title reveal">Faces behind<br><em>every fix.</em></h2>
+    </div>
+
+    <!-- Founder -->
+    <div class="founder-card reveal">
+      <div class="founder-photo">
+        <div class="founder-initials">NN</div>
+        <div class="founder-glow-ring"></div>
+      </div>
+      <div class="founder-content">
+        <div class="founder-badge">Founder & CEO</div>
+        <h3 class="founder-name">Neurovia Nexus</h3>
+        <p class="founder-role">Lead Engineer · Visionary · Builder</p>
+        <p class="founder-bio">"I started Neurovia because I watched too many people lose hours — sometimes entire days — to tech problems that should've been fixed in minutes. We're building the team and the technology to make that the norm, not the exception."</p>
+        <div class="founder-stats">
+          <div class="fstat"><span>5+</span><label>Years in IT</label></div>
+          <div class="fstat"><span>500+</span><label>Devices fixed</label></div>
+          <div class="fstat"><span>50+</span><label>Happy businesses</label></div>
+        </div>
+        <div class="founder-links">
+          <a href="#" class="founder-link">LinkedIn →</a>
+          <a href="#" class="founder-link">Twitter →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team grid -->
+    <div class="team-label reveal">
+      <span>Meet the full team</span>
+    </div>
+
+    <div class="home-team-grid">
+
+      <div class="home-team-card reveal" data-rating="4.9">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#1e3a1e,#2d5a2d)">AR</div>
+          <div class="htc-stars">★★★★★</div>
+        </div>
+        <h4>Arjun Rao</h4>
+        <span>Hardware Specialist</span>
+        <p>"Laptop not turning on? Screen cracked? RAM issues? That's my world."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>120+</strong><small>Jobs done</small></div>
+          <div class="htc-stat"><strong>4.9</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+      <div class="home-team-card reveal delay-1" data-rating="4.8">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#3a1e2e,#5a2d4e)">NM</div>
+          <div class="htc-stars">★★★★★</div>
+        </div>
+        <h4>Neha Mehta</h4>
+        <span>Network Engineer</span>
+        <p>"From WiFi dropouts to full office network setups — networks are my thing."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>95+</strong><small>Jobs done</small></div>
+          <div class="htc-stat"><strong>4.8</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+      <div class="home-team-card reveal delay-2" data-rating="5.0">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#2e2a1e,#4e462e)">KS</div>
+          <div class="htc-stars">★★★★★</div>
+        </div>
+        <h4>Karan Singh</h4>
+        <span>Cybersecurity Expert</span>
+        <p>"Audits, endpoint protection, incident response. I make sure you never get hacked twice."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>60+</strong><small>Jobs done</small></div>
+          <div class="htc-stat"><strong>5.0</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+      <div class="home-team-card reveal delay-3" data-rating="4.9">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#1e2e3a,#2d4e5a)">RV</div>
+          <div class="htc-stars">★★★★★</div>
+        </div>
+        <h4>Riya Verma</h4>
+        <span>Software Developer</span>
+        <p>"I build the tools that make businesses run — websites, apps, automations."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>40+</strong><small>Projects</small></div>
+          <div class="htc-stat"><strong>4.9</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+      <div class="home-team-card reveal" data-rating="4.7">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#2a1e3a,#4a2d5a)">SP</div>
+          <div class="htc-stars">★★★★☆</div>
+        </div>
+        <h4>Sahil Patel</h4>
+        <span>Cloud Architect</span>
+        <p>"AWS, Azure, GCP — I design infrastructure that scales without breaking the bank."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>35+</strong><small>Projects</small></div>
+          <div class="htc-stat"><strong>4.7</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+      <div class="home-team-card reveal delay-1" data-rating="4.9">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#3a2e1e,#5a4a2d)">AM</div>
+          <div class="htc-stars">★★★★★</div>
+        </div>
+        <h4>Ananya Mishra</h4>
+        <span>Remote Support Lead</span>
+        <p>"Virus removal, OS crashes, slow PCs — I've seen it all and fixed it faster than most."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>200+</strong><small>Jobs done</small></div>
+          <div class="htc-stat"><strong>4.9</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+      <div class="home-team-card reveal delay-2" data-rating="4.8">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#1e3a2e,#2d5a46)">VK</div>
+          <div class="htc-stars">★★★★★</div>
+        </div>
+        <h4>Vishal Kumar</h4>
+        <span>Onsite Technician</span>
+        <p>"I come to you. Desktop repairs, office setups, CCTV installs — done right."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>150+</strong><small>Jobs done</small></div>
+          <div class="htc-stat"><strong>4.8</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+      <div class="home-team-card reveal delay-3" data-rating="4.6">
+        <div class="htc-top">
+          <div class="htc-avatar" style="background:linear-gradient(135deg,#1a2a3a,#253d52)">PD</div>
+          <div class="htc-stars">★★★★☆</div>
+        </div>
+        <h4>Priya Desai</h4>
+        <span>Data Recovery Specialist</span>
+        <p>"Deleted files, dead drives, corrupted backups — I find what others say is lost."</p>
+        <div class="htc-meta">
+          <div class="htc-stat"><strong>80+</strong><small>Jobs done</small></div>
+          <div class="htc-stat"><strong>4.6</strong><small>Rating</small></div>
+          <div class="htc-badge">Certified</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="team-cta reveal">
+      <a href="about.html" class="btn-outline">See full team profiles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ VIDEO LIBRARY ═══════════════════ -->
+<section class="video-section" id="videos">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Video library</span>
+      <h2 class="section-title reveal">Watch us<br><em>fix it live.</em></h2>
+      <p class="reveal" style="color:var(--muted);font-size:17px;max-width:480px;margin-top:12px;">Real repair sessions, tutorials, and behind-the-scenes looks at how we work. Rated by viewers.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="video-filters reveal">
+      <button class="vf-btn active" data-vcat="all">All Videos</button>
+      <button class="vf-btn" data-vcat="tutorial">Tutorials</button>
+      <button class="vf-btn" data-vcat="repair">Live Repairs</button>
+      <button class="vf-btn" data-vcat="tip">Quick Tips</button>
+      <button class="vf-btn" data-vcat="ai">AI & Future</button>
+    </div>
+
+    <!-- Featured video -->
+    <div class="video-featured reveal">
+      <div class="vf-player" id="featured-player" onclick="playFeatured()">
+        <div class="vf-thumb" id="featured-thumb" style="background:linear-gradient(135deg,#0a1628,#1a0e28);">
+          <div class="vf-play-btn">▶</div>
+          <div class="vf-duration">12:34</div>
+        </div>
+        <div class="vf-overlay" id="featured-overlay" style="display:none;">
+          <div class="vf-playing-badge">▶ Playing</div>
+          <p style="color:rgba(255,255,255,0.7);font-size:13px;margin-top:8px;">Video player would load here in production</p>
+        </div>
+      </div>
+      <div class="vf-info">
+        <div class="vf-cat-tag" id="featured-cat">Live Repair</div>
+        <h3 id="featured-title">Recovering a Dead Laptop: From Blank Screen to Fully Working in 28 Minutes</h3>
+        <p id="featured-desc">Arjun walks through a complete onsite repair — no power, no display. Watch the full diagnostic process, part replacement, and final test.</p>
+        <div class="vf-meta-row">
+          <div class="vf-stars" id="featured-stars">★★★★★</div>
+          <span id="featured-rating" style="color:var(--white);font-weight:700;font-size:14px;">4.9</span>
+          <span style="color:var(--muted);font-size:13px;" id="featured-views">(2.4k views)</span>
+          <span class="vf-sep">·</span>
+          <span style="color:var(--muted);font-size:13px;" id="featured-tech">By Arjun Rao</span>
+          <span class="vf-sep">·</span>
+          <span style="color:var(--muted);font-size:13px;" id="featured-date">Jun 2025</span>
+        </div>
+        <div class="vf-actions">
+          <button class="btn-primary" onclick="playFeatured()">▶ Watch now</button>
+          <button class="btn-outline" onclick="likeVideo('featured')">♥ <span id="like-count">142</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video grid -->
+    <div class="video-grid" id="video-grid">
+      <!-- Injected by JS -->
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ CTA ═══════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="cta-glow"></div>
+      <span class="section-label">Ready?</span>
+      <h2>Your tech problem<br>ends <em>today.</em></h2>
+      <p>Book a certified technician in minutes. Remote or onsite. No fix, no fee.</p>
+      <div class="cta-actions">
+        <a href="book.html" class="btn-primary btn-large">Book support →</a>
+        <a href="contact.html" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark">N</span>
+          <span>Neurovia Nexus</span>
+        </a>
+        <p>IT support, software solutions, and AI innovation. Mumbai, India.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html">Remote Support</a>
+          <a href="services.html">Onsite Repair</a>
+          <a href="services.html">Business IT</a>
+          <a href="services.html">Software Dev</a>
+          <a href="services.html">Cloud & Security</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="book.html">Book Support</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:support@neurovianexus.com">support@neurovianexus.com</a>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+          <span>Mumbai, Maharashtra</span>
+          <span>India</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Neurovia Nexus Pvt. Ltd.</span>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="api.js"></script>
+<script>
+  // Load all live data when page is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    neurovia.loadSettings();
+    neurovia.loadServices();
+    neurovia.loadTestimonials();
+    neurovia.loadWishlist();
+    neurovia.loadLatestPosts();
+  });
+</script>
+</body>
+</html>

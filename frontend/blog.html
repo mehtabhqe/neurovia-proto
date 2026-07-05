@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Neurovia Nexus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-mark">N</span><span>Neurovia Nexus</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" style="color:var(--white)">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="book.html" class="nav-cta">Book Support</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="book.html" class="mobile-cta">Book Support →</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label reveal">Blog</span>
+    <h1 class="page-title reveal delay-1">Insights,<br><em>updates &amp; ideas.</em></h1>
+    <p class="page-sub reveal delay-2">IT tips, cybersecurity insights, company news, and dispatches from our AI research lab.</p>
+  </div>
+</section>
+
+<section style="padding: 0 0 120px;">
+  <div class="container">
+
+    <!-- Category filters -->
+    <div class="cats-filter reveal">
+      <button class="cat-btn active" data-cat="all">All</button>
+      <button class="cat-btn" data-cat="IT Tips">IT Tips</button>
+      <button class="cat-btn" data-cat="Cybersecurity">Cybersecurity</button>
+      <button class="cat-btn" data-cat="AI Research">AI Research</button>
+      <button class="cat-btn" data-cat="Cloud">Cloud</button>
+      <button class="cat-btn" data-cat="Business">Business</button>
+    </div>
+
+    <!-- Featured + side -->
+    <div class="blog-hero-grid">
+      <a href="#" class="blog-card reveal" style="display:flex;flex-direction:column;">
+        <div class="blog-img" style="background:linear-gradient(135deg,#0f0f2e 0%,#1a1040 50%,#0d1a2e 100%);height:280px;">
+          <span class="blog-category">IT Tips</span>
+        </div>
+        <div class="blog-body" style="flex:1;">
+          <h3 style="font-size:24px;">10 Signs Your PC Is Crying for Help (And How to Fix Them)</h3>
+          <p>From overheating to mysterious slowdowns — here's what your computer is trying to tell you and what to do before things get worse.</p>
+          <div class="blog-meta" style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border);">
+            <span>5 min read</span>
+            <span>·</span>
+            <span>Jun 12, 2025</span>
+            <span>·</span>
+            <span>Neurovia Team</span>
+          </div>
+        </div>
+      </a>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <a href="#" class="blog-card-small reveal delay-1" style="flex:1;">
+          <span class="blog-category-sm">Cybersecurity</span>
+          <h4>Why Small Businesses Are the #1 Target for Ransomware in 2025</h4>
+          <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px;">The threat landscape has shifted. Here's what every SME owner needs to know right now.</p>
+          <div class="blog-meta" style="margin-top:12px;"><span>4 min</span><span>Jun 8, 2025</span></div>
+        </a>
+        <a href="#" class="blog-card-small reveal delay-2" style="flex:1;">
+          <span class="blog-category-sm">AI Research</span>
+          <h4>NADT Update: What We've Learned From 200 Diagnostic Sessions</h4>
+          <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px;">Six months into our research, here's what the data is telling us about automated repair.</p>
+          <div class="blog-meta" style="margin-top:12px;"><span>3 min</span><span>May 30, 2025</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- All posts grid -->
+    <div style="border-top:1px solid var(--border);padding-top:64px;">
+      <h2 style="font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--white);letter-spacing:-0.02em;margin-bottom:32px;">All <em style="font-style:italic;color:var(--muted)">articles</em></h2>
+      <div class="blog-posts-grid" id="posts-grid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section style="padding:80px 0;border-top:1px solid var(--border);background:var(--surface);">
+  <div class="container">
+    <div style="max-width:560px;margin:0 auto;text-align:center;">
+      <span class="section-label reveal" style="justify-content:center;">Newsletter</span>
+      <h2 class="section-title reveal" style="margin-bottom:12px;">Stay in the <em>loop.</em></h2>
+      <p class="reveal" style="color:var(--muted);font-size:16px;margin-bottom:32px;">New articles, IT tips, and NADT research updates — delivered to your inbox. No spam, ever.</p>
+      <div class="reveal" style="display:flex;gap:10px;max-width:420px;margin:0 auto;" id="nl-form">
+        <input type="email" id="nl-email" class="form-input" placeholder="you@example.com" style="flex:1;" />
+        <button class="btn-primary" onclick="subscribeNL()" style="white-space:nowrap;flex-shrink:0;">Subscribe →</button>
+      </div>
+      <div id="nl-success" style="display:none;color:var(--green);font-size:15px;font-weight:600;margin-top:12px;">✓ You're subscribed!</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="logo-mark">N</span><span>Neurovia Nexus</span></a>
+        <p>IT support, software solutions, and AI innovation. Mumbai, India.</p>
+        <div class="footer-socials"><a href="#">in</a><a href="#">𝕏</a><a href="#">ig</a></div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html">Remote Support</a>
+          <a href="services.html">Onsite Repair</a>
+          <a href="services.html">Business IT</a>
+          <a href="services.html">Software Dev</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="book.html">Book Support</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:support@neurovianexus.com">support@neurovianexus.com</a>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+          <span>Mumbai, Maharashtra, India</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Neurovia Nexus Pvt. Ltd.</span>
+      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="api.js"></script>
+<script>
+const posts = [
+  { cat: "Cloud", title: "When to Move to the Cloud — A No-Nonsense Guide for SMEs", excerpt: "Cloud isn't always the answer. Here's an honest framework for deciding when the move actually makes sense.", time: "6 min", date: "May 22, 2025", grad: "linear-gradient(135deg,#0a1628,#0d2040)" },
+  { cat: "IT Tips", title: "How to Recover Data From a Dead Hard Drive", excerpt: "Before you panic, there's a good chance your data is still there. Here's exactly what to do — and what not to do.", time: "8 min", date: "May 15, 2025", grad: "linear-gradient(135deg,#1a0e28,#2d1640)" },
+  { cat: "Business", title: "What Is an AMC and Does Your Business Actually Need One?", excerpt: "Annual Maintenance Contracts can save you money and headaches — if you know what to look for.", time: "5 min", date: "May 8, 2025", grad: "linear-gradient(135deg,#0e1a10,#162816)" },
+  { cat: "Cybersecurity", title: "The 7 Password Mistakes That Are Putting Your Business at Risk", excerpt: "Password hygiene is boring until you're breached. These are the most common mistakes we see — fix them today.", time: "4 min", date: "Apr 28, 2025", grad: "linear-gradient(135deg,#1a0e0e,#401616)" },
+  { cat: "AI Research", title: "Building NADT: Our First 6 Months of Autonomous Diagnostics", excerpt: "An honest look at what we got right, what we got wrong, and where we're headed with our AI technician project.", time: "7 min", date: "Apr 20, 2025", grad: "linear-gradient(135deg,#0e1028,#161840)" },
+  { cat: "IT Tips", title: "Laptop Running Hot? Here's What's Actually Happening Inside", excerpt: "Thermal throttling, dust buildup, and failing fans explained — and what you should do about each.", time: "5 min", date: "Apr 12, 2025", grad: "linear-gradient(135deg,#1a1208,#403016)" },
+];
+
+let activeFilter = 'all';
+
+function renderPosts() {
+  const grid = document.getElementById('posts-grid');
+  const filtered = activeFilter === 'all' ? posts : posts.filter(p => p.cat === activeFilter);
+  grid.innerHTML = filtered.map((p, i) => `
+    <a href="#" class="blog-post-card reveal${i > 0 ? ' delay-' + Math.min(i,4) : ''}">
+      <div class="blog-thumb" style="background:${p.grad}">
+        <span class="blog-category">${p.cat}</span>
+      </div>
+      <div class="blog-post-body">
+        <h3>${p.title}</h3>
+        <p>${p.excerpt}</p>
+        <div class="blog-meta"><span>${p.time} read</span><span>${p.date}</span></div>
+      </div>
+    </a>
+  `).join('');
+
+  // Re-observe new elements
+  grid.querySelectorAll('.reveal').forEach(el => {
+    el.classList.remove('visible');
+    setTimeout(() => el.classList.add('visible'), 50);
+  });
+}
+
+renderPosts();
+
+document.querySelectorAll('.cat-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.dataset.cat;
+    renderPosts();
+  });
+});
+
+async function subscribeNL() {
+  const email = document.getElementById('nl-email').value.trim();
+  if (!email || !email.includes('@')) { alert('Please enter a valid email.'); return; }
+
+  const btn = document.querySelector('#nl-form .btn-primary');
+  btn.textContent = 'Subscribing...';
+  btn.disabled = true;
+
+  try {
+    const result = await neurovia.subscribeToNewsletter(email);
+    if (result.success) {
+      document.getElementById('nl-form').style.display = 'none';
+      document.getElementById('nl-success').style.display = 'block';
+      document.getElementById('nl-success').textContent = '✓ ' + result.message;
+    } else {
+      alert(result.message || 'Failed to subscribe.');
+      btn.textContent = 'Subscribe →';
+      btn.disabled = false;
+    }
+  } catch {
+    alert('Network error. Please try again.');
+    btn.textContent = 'Subscribe →';
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>
