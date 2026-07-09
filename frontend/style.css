@@ -1342,6 +1342,40 @@ img { display: block; max-width: 100%; }
   margin-top: 2px;
 }
 
+.cta-email-form {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.cta-email-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.cta-email-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.cta-email-input:focus {
+  border-color: var(--accent, #fabd2f);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 480px) {
+  .cta-email-form {
+    flex-direction: column;
+  }
+}
 /* ══════════════════════════════════════
    CTA
 ══════════════════════════════════════ */
@@ -1355,6 +1389,7 @@ img { display: block; max-width: 100%; }
   overflow: hidden;
   background: var(--card);
 }
+
 
 .cta-glow {
   position: absolute;
