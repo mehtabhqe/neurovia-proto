@@ -1244,6 +1244,104 @@ img { display: block; max-width: 100%; }
   .blog-grid { grid-template-columns: 1fr; }
 }
 
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.credential-card {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 32px;
+  background: #0d0d10;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.credential-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.16);
+}
+
+.cred-thumb-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #050506;
+  margin-bottom: 24px;
+}
+
+.cred-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cred-hover {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.credential-card:hover .cred-hover {
+  opacity: 1;
+}
+
+.cred-hover span {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cred-name {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--white, #fff);
+  margin: 0 0 6px;
+}
+
+.cred-role {
+  display: block;
+  font-size: 14px;
+  color: var(--accent-blue, #5b8def);
+  margin-bottom: 20px;
+}
+
+.cred-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin-bottom: 20px;
+}
+
+.cred-meta {
+  display: flex;
+  gap: 40px;
+}
+
+.cred-stat strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white, #fff);
+}
+
+.cred-stat small {
+  display: block;
+  font-size: 12px;
+  color: var(--muted, #8a8a94);
+  margin-top: 2px;
+}
+
 /* ══════════════════════════════════════
    CTA
 ══════════════════════════════════════ */
